@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project contains a Playwright end-to-end test for the AbleSpace application. The test uses an existing manually created account to verify login and navigation to the **Caseload** page.
+This project contains a Playwright end-to-end test for the AbleSpace application. Using an existing manually created test account, the test verifies successful login, navigation to the **Caseload** page, and the visibility of a student's details, including their school name.
 
 ---
 
@@ -70,10 +70,14 @@ npx playwright test tests/ablespace-login.spec.js --headed
 
 ## Test Scenario
 
-1. Open the AbleSpace staging application.
-2. Log in using the existing test account.
-3. Navigate to **Caseload**.
-4. Verify that the **Caseload** page is displayed.
+1. Test Scenario
+2. Open the AbleSpace staging application.
+3. Log in using the existing test account.
+4. Navigate to Caseload.
+5. Verify that the Caseload page is displayed.
+6. Verify that the expected student, QA Student01, appears in the Caseload.
+7. Click the student's name to open their details.
+8. Verify that the expected school name, Hopkins School, is displayed.
 
 ---
 
