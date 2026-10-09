@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 require('dotenv').config();
 
-test('user can log in and open Caseload', async ({ page }) => {
+test('user can log in, open Caseload, and verify student details', async ({ page }) => {
 
   // Set total test timeout to 60 seconds
   test.setTimeout(60000);
