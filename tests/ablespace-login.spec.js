@@ -20,8 +20,6 @@ test('user can log in, open Caseload, and verify student details', async ({ page
   // Step 1: Open the application.
   await page.goto(baseURL);
 
-  await page.pause();
-
   // Step 2: Log in with the existing test account.
   await page.getByLabel(/email/i).fill(email);
   await page.getByRole('button', { name: 'Continue', exact: true }).click();
